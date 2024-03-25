@@ -21,36 +21,36 @@
 
 // Всплытие
 
-// var a = 1;
-//
-// function foo() {
-//     console.log(a);
-// }
-//
-// function bar() {
-//     var a = 2;
-//     foo();
-// }
-//
-// bar(); // ?
+var a = 1;
+
+function foo() {
+  console.log(a);
+}
+
+function bar() {
+  var a = 2;
+  foo();
+}
+
+bar(); // 1
 ////////////////////
 
-// function foo(a) {
-//     if (a > 0) {
-//         let a = a + 10
-//         return a
-//     }
-//     return a
-// }
-// console.log(foo(15)) //?
+function foo(a) {
+  if (a > 0) {
+    let a = a + 10
+    return a
+  }
+  return a
+}
+console.log(foo(15)) //error
 ////////////////////
 
-// function giveMeX(showX) {
-//     if(showX) {
-//         let x = 5;
-//     }
-//     return x;
-// }
-//
-// console.log(giveMeX(false)); // ?
-// console.log(giveMeX(true)); // ?
+function giveMeX(showX) {
+  if (showX) {
+    let x = 5;
+  }
+  return x;
+}
+
+console.log(giveMeX(false)); // x not found
+console.log(giveMeX(true)); // x not found
